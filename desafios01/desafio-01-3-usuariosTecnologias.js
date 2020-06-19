@@ -9,6 +9,13 @@ const usuarios = [
 
 //Percorra a lista de usuários com uma estrutura de repetição imprimindo em tela as informações dos usuários
 
-for(let i=0;i<usuarios.length;i++) {
+//sem espaços na vigula entre as tecnologias
+/*for(let i=0;i<usuarios.length;i++) {
     console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias}`);
+}*/
+
+//com espaço após a virgula entre as tecnologias
+for(let usuario of usuarios) {
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(", ")}`)
+
 }
